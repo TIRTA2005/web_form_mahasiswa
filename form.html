@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Data Mahasiswa</title>
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Input Data Mahasiswa</h1>
+
+        <section class="card">
+            <h2>Form Mahasiswa</h2>
+            <form id="mahasiswaForm">
+                <div class="grid">
+                    <label for="nim">NIM<span class="req">*</span></label>
+                    <input id="nim" name="nim" type="text" required />
+
+                    <label for="nama">Nama<span class="req">*</span></label>
+                    <input id="nama" name="nama" type="text" required />
+
+                    <label for="tgl_lahir">Tanggal Lahir<span class="req">*</span></label>
+                    <input id="tgl_lahir" name="tgl_lahir" type="date" required />
+
+                    <label for="tempat_lahir">Tempat Lahir</label>
+                    <input id="tempat_lahir" name="tempat_lahir" type="text" />
+
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" rows="2"></textarea>
+
+                    <label for="hp">No HP</label>
+                    <input id="hp" name="hp" type="tel" pattern="[0-9+\- ]{6,20}" />
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" />
+
+                    <label for="hobi">Hobi</label>
+                    <select id="hobi" name="hobi">
+                        <option value="">--Pilih Hobi--</option>
+                        <option>Olahraga</option>
+                        <option>Membaca</option>
+                        <option>Musik</option>
+                        <option>Programming</option>
+                        <option>Travelling</option>
+                    </select>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Simpan</button>
+                    <button type="reset" class="btn">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Daftar Mahasiswa</h2>
+            <div class="table-wrap">
+                <table id="mahasiswaTable">
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Tgl Lahir</th>
+                            <th>Tempat Lahir</th>
+                            <th>Alamat</th>
+                            <th>No HP</th>
+                            <th>Email</th>
+                            <th>Hobi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>240040001</td><td>Ni Luh Ayu Sulastri</td><td>12/01/2005</td><td>Denpasar</td><td>Jl. Melati No.5</td><td>081234567801</td><td>ayusulastri@gmail.com</td><td>Membaca</td></tr>
+                        <tr><td>240040002</td><td>I Gede Raka Pratama</td><td>03/04/2004</td><td>Singaraja</td><td>Jl. Gunung Agung No.2</td><td>081234567802</td><td>rakapratama@gmail.com</td><td>Futsal</td></tr>
+                        <tr><td>240040003</td><td>Kadek Dwi Andika</td><td>20/06/2005</td><td>Tabanan</td><td>Jl. Raya Pupuan No.8</td><td>081234567803</td><td>andikadwi@gmail.com</td><td>Bermain musik</td></tr>
+                        <tr><td>240040004</td><td>Komang Ayu Sri Dewi</td><td>11/09/2004</td><td>Karangasem</td><td>Jl. Mawar No.12</td><td>081234567804</td><td>ayusridw@gmail.com</td><td>Menulis</td></tr>
+                        <tr><td>240040005</td><td>I Made Surya Aditya</td><td>27/02/2005</td><td>Gianyar</td><td>Jl. Raya Ubud No.3</td><td>081234567805</td><td>suryaaditya@gmail.com</td><td>Bersepeda</td></tr>
+                        <tr><td>240040006</td><td>Ni Kadek Putri Anjani</td><td>15/03/2005</td><td>Bangli</td><td>Jl. Kenanga No.6</td><td>081234567806</td><td>putrianjani@gmail.com</td><td>Memasak</td></tr>
+                        <tr><td>240040007</td><td>I Komang Bayu Saputra</td><td>05/07/2004</td><td>Denpasar</td><td>Jl. Teuku Umar No.9</td><td>081234567807</td><td>bayusaputra@gmail.com</td><td>Bermain game</td></tr>
+                        <tr><td>240040008</td><td>I Putu Adi Tirta Saputra</td><td>09/10/2004</td><td>Badung</td><td>Jl. Raya Kuta No.10</td><td>081234567808</td><td>aditirtasaputra@gmail.com</td><td>Desain grafis</td></tr>
+                        <tr><td>240040009</td><td>Ni Made Wulan Sari</td><td>22/08/2005</td><td>Klungkung</td><td>Jl. Merdeka No.11</td><td>081234567809</td><td>wulansari@gmail.com</td><td>Fotografi</td></tr>
+                        <tr><td>240040010</td><td>I Ketut Dharma Wijaya</td><td>18/12/2004</td><td>Buleleng</td><td>Jl. Raya Seririt No.13</td><td>081234567810</td><td>dharmawijaya@gmail.com</td><td>Traveling</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+</body>
+</html>
