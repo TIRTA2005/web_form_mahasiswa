@@ -1,1 +1,1 @@
-![Project Screenshot](./images/form)
+![Project Screenshot](./images/form.png)
